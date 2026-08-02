@@ -1,0 +1,1005 @@
+.sales-page {
+  display: grid;
+  gap: 20px;
+}
+
+.sales-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 26px;
+  border: 1px solid #cce7e4;
+  border-radius: 19px;
+  background:
+    linear-gradient(
+      135deg,
+      #eaf9f6,
+      #ffffff
+    );
+}
+
+.sales-toolbar p,
+.result-heading p,
+.cart-heading p {
+  margin: 0 0 6px;
+  color: #087383;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.sales-toolbar h2,
+.result-heading h3,
+.cart-heading h3 {
+  margin: 0;
+  color: #193246;
+}
+
+.sales-toolbar h2 {
+  font-size: 25px;
+}
+
+.sales-toolbar > div > span {
+  display: block;
+  margin-top: 8px;
+  color: #718394;
+  font-size: 13px;
+}
+
+.sale-number {
+  flex: 0 0 auto;
+  min-width: 115px;
+  padding: 13px 17px;
+  border-radius: 13px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.sale-number span,
+.sale-number strong {
+  display: block;
+}
+
+.sale-number span {
+  color: #8292a1;
+  font-size: 10px;
+}
+
+.sale-number strong {
+  margin-top: 5px;
+  color: #087383;
+  font-size: 24px;
+}
+
+.sales-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 13px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  background: #fff1f2;
+  color: #b42318;
+}
+
+.sales-error p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.sales-error button {
+  border: 0;
+  background: transparent;
+  color: #b42318;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.sales-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(340px, 0.75fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.medicine-section {
+  display: grid;
+  gap: 16px;
+}
+
+.medicine-search-card,
+.medicine-result-card,
+.sales-cart {
+  border: 1px solid #dce6ef;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.medicine-search-card {
+  padding: 20px;
+}
+
+.medicine-search-card label {
+  display: block;
+  margin-bottom: 9px;
+  color: #273d50;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.medicine-search-row {
+  display: flex;
+  gap: 10px;
+}
+
+.medicine-search-row input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 15px;
+  border: 1px solid #cfdae6;
+  border-radius: 11px;
+  outline: none;
+  background: #fbfdff;
+}
+
+.medicine-search-row input:focus {
+  border-color: #087383;
+  box-shadow:
+    0 0 0 4px
+    rgba(8, 115, 131, 0.1);
+}
+
+.medicine-search-row button {
+  min-width: 105px;
+  border: 0;
+  border-radius: 11px;
+  background: #087383;
+  color: #ffffff;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.search-hint {
+  margin: 9px 0 0;
+  color: #8795a3;
+  font-size: 11px;
+}
+
+.medicine-result-card {
+  padding: 20px;
+}
+
+.result-heading,
+.cart-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.result-heading h3,
+.cart-heading h3 {
+  font-size: 18px;
+}
+
+.result-heading > span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #edf7f5;
+  color: #087383;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.medicine-list {
+  display: grid;
+  gap: 10px;
+}
+
+.medicine-item {
+  display: grid;
+  grid-template-columns:
+    auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 13px;
+  padding: 13px;
+  border: 1px solid #e1e9f0;
+  border-radius: 13px;
+}
+
+.medicine-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #e4f7f3;
+  color: #087383;
+  font-weight: 900;
+}
+
+.medicine-information {
+  min-width: 0;
+}
+
+.medicine-information strong,
+.medicine-information span,
+.medicine-information small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.medicine-information strong {
+  color: #1d3346;
+  font-size: 13px;
+}
+
+.medicine-information span {
+  margin-top: 4px;
+  color: #758697;
+  font-size: 11px;
+}
+
+.medicine-information small {
+  margin-top: 4px;
+  color: #9aa7b3;
+  font-size: 10px;
+}
+
+.medicine-item > button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 9px;
+  background: #e4f7f3;
+  color: #087383;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sales-empty {
+  padding: 40px 20px;
+  color: #7d8d9d;
+  text-align: center;
+}
+
+.sales-cart {
+  position: sticky;
+  top: 98px;
+  padding: 20px;
+}
+
+.cart-heading > button {
+  border: 0;
+  background: transparent;
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.empty-cart {
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.empty-cart > div {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: #e8f7f4;
+  color: #087383;
+  font-weight: 900;
+}
+
+.empty-cart strong {
+  margin-top: 15px;
+  color: #263b4e;
+}
+
+.empty-cart span {
+  margin-top: 7px;
+  color: #8897a5;
+  font-size: 12px;
+}
+
+.cart-items {
+  max-height: 420px;
+  display: grid;
+  gap: 11px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  padding: 13px;
+  border: 1px solid #e0e8ef;
+  border-radius: 13px;
+}
+
+.cart-item-top,
+.cart-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+}
+
+.cart-item-top strong,
+.cart-item-top span,
+.cart-item-top small {
+  display: block;
+}
+
+.cart-item-top strong {
+  color: #1f3447;
+  font-size: 13px;
+}
+
+.cart-item-top span,
+.cart-item-top small {
+  margin-top: 4px;
+  color: #8291a0;
+  font-size: 10px;
+}
+
+.remove-item {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #b42318;
+  cursor: pointer;
+}
+
+.cart-item-bottom {
+  align-items: center;
+  margin-top: 13px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d6e1e9;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.quantity-control strong {
+  min-width: 24px;
+  text-align: center;
+}
+
+.cart-price {
+  text-align: right;
+}
+
+.cart-price span,
+.cart-price strong {
+  display: block;
+}
+
+.cart-price span {
+  color: #8795a3;
+  font-size: 9px;
+}
+
+.cart-price strong {
+  margin-top: 4px;
+  color: #173348;
+  font-size: 14px;
+}
+
+.stock-note {
+  margin: 10px 0 0;
+  color: #82919e;
+  font-size: 9px;
+}
+
+.cart-summary {
+  display: grid;
+  gap: 13px;
+  margin-top: 18px;
+  padding-top: 17px;
+  border-top: 1px solid #e1e8ef;
+}
+
+.cart-summary > div,
+.cart-summary label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.cart-summary span {
+  color: #748697;
+  font-size: 12px;
+}
+
+.cart-summary input {
+  width: 105px;
+  min-height: 37px;
+  padding: 0 10px;
+  border: 1px solid #d3dee7;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.grand-total {
+  padding-top: 13px;
+  border-top: 1px dashed #d3dde5;
+}
+
+.grand-total strong {
+  color: #087383;
+  font-size: 21px;
+}
+
+.checkout-button {
+  min-height: 49px;
+  border: 0;
+  border-radius: 11px;
+  background: #087383;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.checkout-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (max-width: 1050px) {
+  .sales-layout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(310px, 0.75fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .sales-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-cart {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .sales-page {
+    gap: 15px;
+  }
+
+  .sales-toolbar {
+    padding: 19px;
+  }
+
+  .sales-toolbar h2 {
+    font-size: 21px;
+  }
+
+  .sale-number {
+    min-width: 78px;
+  }
+
+  .medicine-search-card,
+  .medicine-result-card,
+  .sales-cart {
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  .medicine-search-row {
+    display: grid;
+  }
+
+  .medicine-search-row button {
+    min-height: 45px;
+  }
+
+  .medicine-item {
+    grid-template-columns:
+      auto minmax(0, 1fr);
+  }
+
+  .medicine-item > button {
+    grid-column: 1 / -1;
+    min-height: 39px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sales-toolbar {
+    align-items: flex-start;
+  }
+
+  .sales-toolbar > div > span {
+    display: none;
+  }
+}
+
+/* Payment modal */
+
+.payment-overlay {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(7, 28, 40, 0.58);
+  backdrop-filter: blur(7px);
+}
+
+.payment-modal {
+  width: min(100%, 1050px);
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  border-radius: 22px;
+  background: #f5f8fb;
+  box-shadow:
+    0 30px 90px
+    rgba(0, 0, 0, 0.28);
+}
+
+.payment-modal-header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 26px;
+  border-bottom: 1px solid #dce5ed;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(15px);
+}
+
+.payment-modal-header p {
+  margin: 0 0 5px;
+  color: #087383;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.payment-modal-header h2 {
+  margin: 0;
+  color: #193246;
+  font-size: 23px;
+}
+
+.payment-modal-header > button {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border: 0;
+  border-radius: 11px;
+  background: #edf3f6;
+  color: #21384b;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.payment-modal-body {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    minmax(280px, 0.78fr);
+  gap: 16px;
+  padding: 22px;
+  align-items: start;
+}
+
+.payment-form-section,
+.payment-summary-card {
+  padding: 19px;
+  border: 1px solid #dce5ed;
+  border-radius: 17px;
+  background: #ffffff;
+}
+
+.payment-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.payment-section-heading > span {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #e2f7f3;
+  color: #087383;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.payment-section-heading strong,
+.payment-section-heading p {
+  display: block;
+}
+
+.payment-section-heading strong {
+  color: #21384b;
+  font-size: 14px;
+}
+
+.payment-section-heading p {
+  margin: 3px 0 0;
+  color: #8593a0;
+  font-size: 10px;
+}
+
+.customer-search,
+.customer-select,
+.payment-reference input,
+.payment-reference textarea {
+  width: 100%;
+  border: 1px solid #cfdae4;
+  border-radius: 10px;
+  outline: none;
+  background: #fbfdff;
+  color: #1e3346;
+}
+
+.customer-search,
+.customer-select,
+.payment-reference input {
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+.customer-select {
+  margin-top: 10px;
+}
+
+.customer-search:focus,
+.customer-select:focus,
+.payment-reference input:focus,
+.payment-reference textarea:focus,
+.payment-method input:focus {
+  border-color: #087383;
+  box-shadow:
+    0 0 0 4px
+    rgba(8, 115, 131, 0.09);
+}
+
+.selected-customer {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 11px;
+  background: #eff9f7;
+}
+
+.selected-customer strong,
+.selected-customer span {
+  display: block;
+}
+
+.selected-customer strong {
+  color: #1e384a;
+  font-size: 13px;
+}
+
+.selected-customer span {
+  margin-top: 4px;
+  color: #778a98;
+  font-size: 11px;
+}
+
+.payment-method-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.payment-method {
+  display: grid;
+  gap: 6px;
+}
+
+.payment-method span,
+.payment-reference > span {
+  color: #5f7383;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.payment-method input {
+  width: 100%;
+  min-width: 0;
+  min-height: 41px;
+  padding: 0 10px;
+  border: 1px solid #cfdae4;
+  border-radius: 9px;
+  outline: none;
+  text-align: right;
+}
+
+.payment-reference {
+  display: grid;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.payment-reference textarea {
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.payment-summary-card > p {
+  margin: 0 0 5px;
+  color: #087383;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.payment-summary-card h3 {
+  margin: 0 0 18px;
+  color: #1c3448;
+  font-size: 18px;
+}
+
+.payment-summary-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13px;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.payment-summary-card > div span {
+  color: #748696;
+  font-size: 11px;
+}
+
+.payment-summary-card > div strong {
+  color: #1e3548;
+  font-size: 13px;
+}
+
+.payment-summary-card
+  .payment-grand-total {
+  margin-top: 6px;
+  padding: 14px 0;
+}
+
+.payment-summary-card
+  .payment-grand-total strong {
+  color: #087383;
+  font-size: 22px;
+}
+
+.payment-summary-card
+  .payment-due.has-due strong {
+  color: #c2410c;
+}
+
+.due-warning {
+  margin: 12px 0 0;
+  padding: 10px;
+  border-radius: 9px;
+  background: #fff4e5;
+  color: #a64c00;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.complete-sale-button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 17px;
+  border: 0;
+  border-radius: 11px;
+  background: #087383;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.complete-sale-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Sale success */
+
+.sale-success {
+  display: grid;
+  place-items: center;
+  padding: 45px 24px;
+  text-align: center;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 33px;
+  font-weight: 900;
+}
+
+.sale-success > p {
+  margin: 20px 0 6px;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sale-success h3 {
+  margin: 0;
+  color: #193246;
+  font-size: 27px;
+}
+
+.success-summary {
+  width: min(100%, 520px);
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.success-summary > div {
+  padding: 15px;
+  border: 1px solid #dce5ed;
+  border-radius: 13px;
+  background: #ffffff;
+}
+
+.success-summary span,
+.success-summary strong {
+  display: block;
+}
+
+.success-summary span {
+  color: #7e8e9c;
+  font-size: 10px;
+}
+
+.success-summary strong {
+  margin-top: 7px;
+  color: #1d3447;
+  font-size: 16px;
+}
+
+.success-actions {
+  width: min(100%, 520px);
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.invoice-button,
+.new-sale-button {
+  min-height: 47px;
+  border-radius: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.invoice-button {
+  border: 0;
+  background: #087383;
+  color: #ffffff;
+}
+
+.new-sale-button {
+  border: 1px solid #cdd9e2;
+  background: #ffffff;
+  color: #21384b;
+}
+
+.invoice-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (max-width: 960px) {
+  .payment-modal-body {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .payment-summary-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .payment-overlay {
+    align-items: end;
+    padding: 0;
+  }
+
+  .payment-modal {
+    max-height: 94dvh;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .payment-modal-header {
+    padding: 18px;
+  }
+
+  .payment-modal-header h2 {
+    font-size: 20px;
+  }
+
+  .payment-modal-body {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .payment-summary-card {
+    grid-column: auto;
+  }
+
+  .success-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .success-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .payment-method-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* tablet layout */
+}
+
+@media (max-width: 768px) {
+  /* mobile layout */
+}

@@ -1,0 +1,1116 @@
+.settings-page,
+.settings-page * {
+  box-sizing: border-box;
+}
+
+.settings-page {
+  --settings-primary: #078397;
+  --settings-primary-dark: #056777;
+  --settings-primary-soft: #e4f7f4;
+  --settings-border: #d4e0ec;
+  --settings-text: #102a43;
+  --settings-muted: #7588a2;
+  --settings-background: #f3f7fb;
+  --settings-card: #ffffff;
+  --settings-success: #06865b;
+  --settings-danger: #d73737;
+  --settings-warning: #e89b16;
+
+  width: 100%;
+  min-width: 0;
+  padding: 26px;
+  color: var(--settings-text);
+  background: var(--settings-background);
+}
+
+/* ======================================================
+   Page hero
+====================================================== */
+
+.settings-page-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 34px 38px;
+  margin-bottom: 24px;
+
+  border: 1px solid #bde7e2;
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      105deg,
+      #e9faf7 0%,
+      #f9fdfc 55%,
+      #dff8f3 100%
+    );
+}
+
+.settings-eyebrow {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #007c8c;
+
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.settings-page-hero h1 {
+  margin: 0;
+
+  color: #0e2941;
+
+  font-size: clamp(
+    28px,
+    3vw,
+    42px
+  );
+
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.settings-page-hero p {
+  max-width: 720px;
+
+  margin: 12px 0 0;
+
+  color: var(--settings-muted);
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.settings-hero-summary {
+  display: flex;
+  flex: 0 0 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 112px;
+  padding: 18px 22px;
+
+  border: 1px solid #cce1e5;
+  border-radius: 20px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.84
+  );
+
+  text-align: center;
+}
+
+.settings-hero-summary span {
+  color: var(--settings-muted);
+  font-size: 13px;
+}
+
+.settings-hero-summary strong {
+  margin-top: 5px;
+
+  color: var(--settings-primary);
+
+  font-size: 20px;
+}
+
+.settings-hero-summary small {
+  margin-top: 8px;
+
+  color: #8b9ab0;
+
+  font-size: 11px;
+}
+
+/* ======================================================
+   Alerts
+====================================================== */
+
+.settings-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 16px 20px;
+  margin-bottom: 18px;
+
+  border: 1px solid;
+  border-radius: 16px;
+}
+
+.settings-alert > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.settings-alert strong {
+  font-size: 14px;
+}
+
+.settings-alert span {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.settings-alert button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.settings-alert-success {
+  color: #08724f;
+  border-color: #a9e2cd;
+  background: #ebfbf4;
+}
+
+.settings-alert-error {
+  color: #bd2424;
+  border-color: #ffc4c4;
+  background: #fff0f0;
+}
+
+.settings-alert-success > button,
+.settings-alert-error
+  .settings-alert-actions
+  > button:last-child {
+  width: 34px;
+  height: 34px;
+
+  color: inherit;
+
+  font-size: 23px;
+  line-height: 1;
+
+  border-radius: 10px;
+}
+
+.settings-alert-success
+  > button:hover {
+  background: #d5f5e8;
+}
+
+.settings-alert-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-alert-refresh {
+  padding: 9px 14px;
+
+  color: #a91d1d;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  border: 1px solid #efaaaa !important;
+  border-radius: 9px !important;
+
+  background: #ffffff !important;
+}
+
+/* ======================================================
+   Access card
+====================================================== */
+
+.settings-access-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 18px 22px;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--settings-border);
+  border-radius: 18px;
+
+  background: var(--settings-card);
+}
+
+.settings-access-icon {
+  display: flex;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  color: var(--settings-primary);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  border-radius: 14px;
+
+  background: var(
+    --settings-primary-soft
+  );
+}
+
+.settings-access-card > div:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+
+.settings-access-card strong {
+  display: block;
+
+  color: var(--settings-text);
+  font-size: 14px;
+}
+
+.settings-access-card p {
+  margin: 4px 0 0;
+
+  color: var(--settings-muted);
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ======================================================
+   Settings form
+====================================================== */
+
+.pharmacy-settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-form-section {
+  overflow: hidden;
+
+  padding: 28px;
+
+  border: 1px solid var(--settings-border);
+  border-radius: 20px;
+
+  background: var(--settings-card);
+
+  box-shadow:
+    0 8px 25px
+    rgba(26, 54, 85, 0.035);
+}
+
+.settings-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e6edf4;
+}
+
+.settings-section-heading h2 {
+  margin: 0;
+
+  color: var(--settings-text);
+
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.settings-section-heading p {
+  margin: 7px 0 0;
+
+  color: var(--settings-muted);
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.settings-version-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 34px;
+  padding: 7px 13px;
+
+  color: #087b88;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  border: 1px solid #bfe7e3;
+  border-radius: 999px;
+
+  background: #eaf9f6;
+}
+
+/* ======================================================
+   Form grid and fields
+====================================================== */
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.settings-form-grid-three {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+.settings-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-field-wide {
+  grid-column: 1 / -1;
+}
+
+.settings-field > span {
+  color: #334e68;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.settings-field input,
+.settings-field select,
+.settings-field textarea {
+  width: 100%;
+
+  color: #102a43;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+
+  border: 1px solid #cddae7;
+  border-radius: 12px;
+  outline: none;
+
+  background: #fbfdff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.settings-field input,
+.settings-field select {
+  min-height: 48px;
+  padding: 0 14px;
+}
+
+.settings-field textarea {
+  min-height: 90px;
+  padding: 13px 14px;
+
+  resize: vertical;
+}
+
+.settings-field input::placeholder,
+.settings-field textarea::placeholder {
+  color: #9cabbc;
+}
+
+.settings-field input:focus,
+.settings-field select:focus,
+.settings-field textarea:focus {
+  border-color: var(
+    --settings-primary
+  );
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(7, 131, 151, 0.12);
+}
+
+.settings-field input:disabled,
+.settings-field select:disabled,
+.settings-field textarea:disabled {
+  color: #6f8195;
+
+  border-color: #e0e8ef;
+
+  background: #f3f6f9;
+
+  cursor: not-allowed;
+}
+
+/* ======================================================
+   Inventory safety
+====================================================== */
+
+.settings-safety-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  min-height: 78px;
+  padding: 14px 16px;
+
+  border: 1px solid #bfe5d5;
+  border-radius: 13px;
+
+  background: #f0fbf6;
+}
+
+.settings-safety-card strong {
+  display: block;
+
+  color: #174e3c;
+
+  font-size: 13px;
+}
+
+.settings-safety-card p {
+  margin: 5px 0 0;
+
+  color: #6c8a7f;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.settings-safety-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 12px;
+
+  color: #08734f;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  border-radius: 999px;
+
+  background: #d8f4e7;
+}
+
+/* ======================================================
+   Form error and actions
+====================================================== */
+
+.settings-form-error {
+  padding: 14px 17px;
+
+  color: #ba2424;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border: 1px solid #ffc5c5;
+  border-radius: 12px;
+
+  background: #fff1f1;
+}
+
+.settings-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+
+  position: sticky;
+  bottom: 16px;
+  z-index: 5;
+
+  padding: 16px 20px;
+
+  border: 1px solid var(--settings-border);
+  border-radius: 16px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.96
+  );
+
+  box-shadow:
+    0 12px 35px
+    rgba(30, 55, 85, 0.12);
+
+  backdrop-filter: blur(10px);
+}
+
+.settings-readonly-message {
+  margin: 0 auto 0 0;
+
+  color: var(--settings-muted);
+
+  font-size: 12px;
+}
+
+.settings-primary-button,
+.settings-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0 20px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+
+  border-radius: 11px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.settings-primary-button {
+  color: #ffffff;
+
+  border: 1px solid
+    var(--settings-primary);
+
+  background: var(
+    --settings-primary
+  );
+
+  box-shadow:
+    0 7px 18px
+    rgba(7, 131, 151, 0.2);
+}
+
+.settings-primary-button:hover:not(
+  :disabled
+) {
+  border-color:
+    var(--settings-primary-dark);
+
+  background:
+    var(--settings-primary-dark);
+
+  transform: translateY(-1px);
+}
+
+.settings-secondary-button {
+  color: #25445f;
+
+  border: 1px solid #ccdae7;
+
+  background: #ffffff;
+}
+
+.settings-secondary-button:hover:not(
+  :disabled
+) {
+  color: var(--settings-primary);
+
+  border-color: #9ed6d5;
+
+  background: #f2fbfa;
+}
+
+.settings-primary-button:disabled,
+.settings-secondary-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ======================================================
+   Loading and error states
+====================================================== */
+
+.settings-loading-card,
+.settings-error-card {
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border: 1px dashed #bdd0e0;
+  border-radius: 22px;
+
+  background: #ffffff;
+}
+
+.settings-loading-card h2,
+.settings-error-card h2 {
+  margin: 18px 0 0;
+
+  color: var(--settings-text);
+
+  font-size: 21px;
+}
+
+.settings-loading-card p,
+.settings-error-card p {
+  max-width: 500px;
+
+  margin: 8px 0 20px;
+
+  color: var(--settings-muted);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.settings-spinner {
+  width: 46px;
+  height: 46px;
+
+  border: 4px solid #d9f1ef;
+  border-top-color:
+    var(--settings-primary);
+
+  border-radius: 50%;
+
+  animation:
+    settings-spin 0.8s linear
+    infinite;
+}
+
+.settings-state-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  color: #c92d2d;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  border-radius: 18px;
+
+  background: #ffeaea;
+}
+
+@keyframes settings-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (max-width: 1050px) {
+  .settings-form-grid-three {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .settings-safety-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .settings-page {
+    padding: 16px;
+  }
+
+  .settings-page-hero {
+    align-items: stretch;
+    flex-direction: column;
+
+    padding: 25px 22px;
+
+    border-radius: 18px;
+  }
+
+  .settings-hero-summary {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .settings-access-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .settings-access-card
+    .settings-secondary-button {
+    width: 100%;
+  }
+
+  .settings-form-section {
+    padding: 21px 17px;
+  }
+
+  .settings-section-heading {
+    flex-direction: column;
+  }
+
+  .settings-form-grid,
+  .settings-form-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-field-wide,
+  .settings-safety-card {
+    grid-column: auto;
+  }
+
+  .settings-form-actions {
+    align-items: stretch;
+    flex-direction: column;
+
+    bottom: 8px;
+  }
+
+  .settings-readonly-message {
+    margin: 0 0 5px;
+
+    text-align: center;
+  }
+
+  .settings-primary-button,
+  .settings-secondary-button {
+    width: 100%;
+  }
+
+  .settings-alert {
+    align-items: flex-start;
+  }
+
+  .settings-alert-actions {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .settings-spinner {
+    animation-duration: 1.8s;
+  }
+
+  .settings-primary-button,
+  .settings-secondary-button,
+  .settings-field input,
+  .settings-field select,
+  .settings-field textarea {
+    transition: none;
+  }
+}
+
+/* ======================================================
+   Settings Mobile Responsive Override
+   Add at the END of settings.css
+====================================================== */
+
+@media (max-width: 1000px) {
+  .settings-page {
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .settings-page-hero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .settings-hero-summary {
+    flex: none;
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .settings-form-grid-three {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .settings-safety-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .settings-page {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  /* Page heading */
+
+  .settings-page-hero {
+    gap: 20px;
+
+    padding: 24px 18px;
+    margin-bottom: 16px;
+
+    border-radius: 17px;
+  }
+
+  .settings-page-hero h1 {
+    font-size: 29px;
+    line-height: 1.15;
+  }
+
+  .settings-page-hero p {
+    margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .settings-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.1px;
+  }
+
+  .settings-hero-summary {
+    min-height: auto;
+    padding: 17px;
+
+    border-radius: 15px;
+  }
+
+  .settings-hero-summary strong {
+    font-size: 18px;
+  }
+
+  /* Success and error alerts */
+
+  .settings-alert {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 15px;
+    margin-bottom: 14px;
+
+    border-radius: 14px;
+  }
+
+  .settings-alert > button {
+    position: absolute;
+    right: 20px;
+  }
+
+  .settings-alert-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .settings-alert-refresh {
+    flex: 1;
+  }
+
+  /* Access card */
+
+  .settings-access-card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+
+    padding: 16px;
+    margin-bottom: 16px;
+
+    border-radius: 15px;
+  }
+
+  .settings-access-card
+    .settings-secondary-button {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  /* Form sections */
+
+  .pharmacy-settings-form {
+    gap: 16px;
+  }
+
+  .settings-form-section {
+    padding: 20px 16px;
+
+    border-radius: 16px;
+  }
+
+  .settings-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+
+    padding-bottom: 17px;
+    margin-bottom: 19px;
+  }
+
+  .settings-section-heading h2 {
+    font-size: 20px;
+  }
+
+  .settings-section-heading p {
+    font-size: 12px;
+  }
+
+  .settings-version-badge {
+    align-self: flex-start;
+  }
+
+  /* All form grids become single-column */
+
+  .settings-form-grid,
+  .settings-form-grid-three {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .settings-field-wide,
+  .settings-safety-card {
+    grid-column: auto;
+  }
+
+  .settings-field input,
+  .settings-field select {
+    min-height: 50px;
+
+    /*
+     * 16px prevents automatic zoom
+     * in mobile browsers.
+     */
+    font-size: 16px;
+  }
+
+  .settings-field textarea {
+    min-height: 105px;
+
+    font-size: 16px;
+  }
+
+  .settings-safety-card {
+    align-items: flex-start;
+    flex-direction: column;
+
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .settings-safety-status {
+    align-self: flex-start;
+  }
+
+  /* Bottom actions */
+
+  .settings-form-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    position: sticky;
+    bottom: 8px;
+
+    width: 100%;
+    padding: 13px;
+
+    border-radius: 14px;
+  }
+
+  .settings-form-actions
+    .settings-secondary-button {
+    order: 2;
+  }
+
+  .settings-form-actions
+    .settings-primary-button {
+    order: 1;
+  }
+
+  .settings-primary-button,
+  .settings-secondary-button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .settings-readonly-message {
+    order: 0;
+
+    width: 100%;
+    margin: 0 0 4px;
+
+    text-align: center;
+  }
+
+  /* Loading and error */
+
+  .settings-loading-card,
+  .settings-error-card {
+    min-height: 380px;
+    padding: 25px 16px;
+
+    border-radius: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .settings-page {
+    padding: 9px;
+  }
+
+  .settings-page-hero {
+    padding: 21px 15px;
+  }
+
+  .settings-page-hero h1 {
+    font-size: 25px;
+  }
+
+  .settings-form-section {
+    padding: 18px 13px;
+  }
+
+  .settings-section-heading h2 {
+    font-size: 18px;
+  }
+
+  .settings-access-card {
+    padding: 14px;
+  }
+
+  .settings-access-icon {
+    width: 43px;
+    height: 43px;
+    flex-basis: 43px;
+  }
+}

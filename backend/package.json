@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "PharmaERP Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:setup": "node src/scripts/setupDatabase.js",
+    "db:inventory-masters": "node src/scripts/setupInventoryMasters.js",
+    "db:medicines": "node src/scripts/setupMedicines.js",
+    "db:stock": "node src/scripts/setupStock.js",
+    "db:purchases": "node src/scripts/setupPurchases.js",
+    "db:sales": "node src/scripts/setupSales.js",
+    "db:sale-returns": "node src/scripts/setupSaleReturns.js",
+    "db:purchase-returns": "node src/scripts/setupPurchaseReturns.js",
+    "db:stock-adjustments": "node src/scripts/setupStockAdjustments.js",
+    "db:purchase-payments": "node src/scripts/setupPurchasePayments.js",
+    "db:barcode-qr": "node src/scripts/setupBarcodeQr.js",
+    "test:stock-adjustment-concurrency": "node src/scripts/testStockAdjustmentConcurrency.js",
+    "db:settings": "node src/scripts/setupSettings.js"
+  },
+  "keywords": [
+    "pharmacy",
+    "erp",
+    "billing",
+    "inventory"
+  ],
+  "author": "Nur Alam",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bwip-js": "^4.11.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.0.0",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.11.0",
+    "mysql2": "^3.0.0",
+    "pdfkit": "^0.19.1",
+    "puppeteer": "^25.4.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
