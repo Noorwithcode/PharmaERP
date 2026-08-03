@@ -7,6 +7,7 @@ const apiClient = axios.create({
 
   headers: {
     "Content-Type": "application/json",
+    "ngrok-skip-browser-warning": "true",
   },
 
   timeout: 15000,
@@ -14,10 +15,13 @@ const apiClient = axios.create({
 
 apiClient.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem("pharmaerp_token");
+    const token = localStorage.getItem(
+      "pharmaerp_token"
+    );
 
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+      config.headers.Authorization =
+        `Bearer ${token}`;
     }
 
     return config;
@@ -31,8 +35,13 @@ apiClient.interceptors.response.use(
 
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem("pharmaerp_token");
-      localStorage.removeItem("pharmaerp_user");
+      localStorage.removeItem(
+        "pharmaerp_token"
+      );
+
+      localStorage.removeItem(
+        "pharmaerp_user"
+      );
     }
 
     return Promise.reject(error);
